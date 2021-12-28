@@ -1,152 +1,153 @@
 {
-    "name": "Gahache-CLI",
-    "type": "executer",
-    "execProgram": "node",
-    "main": "app.js",
-    "version": "1.0.1",
-    "imgUrl": "logo.png",
-    "methods": [
-      {
-        "name":"executeGahacheCLI",
-        "viewName":"Execute CLI",
-        "params":[
-          {
-            "name":"ACCOUNT",
-            "viewName":"account",
-            "type":"string"
-          },
-          {
-            "name":"DEFAULTBALANCEETHER",
-            "viewName":"DefaultBalanceEther: Amount of ether to assign each test account",
-            "type":"string"
-          },
-          {
-            "name":"BLOCKTIME",
-            "viewName":"blockTime: In seconds for automatic mining",
-            "type":"string"
-          },
-          {
-            "name":"DETERMINISTIC",
-            "viewName":"Deterministic: Generate deterministic addresses based on a pre-defined mnemonic",
-            "type":"string"
-          },
-          {
-            "name":"SECURE",
-            "viewName":"Secure: Lock available accounts by default",
-            "type":"string"
-          },
-          {
-            "name":"MNEMONIC",
-            "viewName":"mnemonic: Use a bip39 mnemonic phrase for generating a PRNG seed",
-            "type":"string"
-          },
-          {
-            "name":"PORT",
-            "viewName":"port: to listen. Defualt 8545",
-            "type":"string"
-          },
-          {
-            "name":"HOST",
-            "viewName":"host: to listen. Default 127.0.0.1",
-            "type":"string"
-          },
-          {
-            "name":"SEED",
-            "viewName":"seed: Use arbitrary data to generate the HD wallet mnemonic to be used",
-            "type":"string"
-          },
-          {
-            "name":"GASPRICE",
-            "viewName":"gas price: Default 20,000,000,000 wei",
-            "type":"string"
-          },
-          {
-            "name":"GASLIMIT",
-            "viewName":"gas limit: Defaults to 0x6691b7",
-            "type":"string"
-          },
-          {
-            "name":"CALLGASLIMIT",
-            "viewName":"call Gas limit Default to 0x1fffffffffffff",
-            "type":"string"
-          },
-          {
-            "name":"HARDFORK",
-            "viewName":"hard fork",
-            "type":"string"
-          },
-          {
-            "name":"FORK",
-            "viewName":"fork",
-            "type":"string"
-          },
-          {
-            "name":"NETWORKID",
-            "viewName":"network Id",
-            "type":"string"
-          },
-          {
-            "name":"DB",
-            "viewName":"DB",
-            "type":"string"
-          },
-          {
-            "name":"DEBUG",
-            "viewName":"debug",
-            "type":"boolean"
-          },
-          {
-            "name":"MEM",
-            "viewName":"mem",
-            "type":"string"
-          },
-          {
-            "name":"QUIET",
-            "viewName":"quite",
-            "type":"boolean"
-          },
-          {
-            "name":"VERBOSE",
-            "viewName":"verbose",
-            "type":"boolean"
-          },
-          {
-            "name":"VERSION",
-            "viewName":"version",
-            "type":"string"
-          },
-          {
-            "name":"NOVMERRORSONRPCRESPONSE",
-            "viewName":"no VM Errors On RPC Response",
-            "type":"boolean"
-          },
-          {
-            "name":"ALLOWUNLIMITEDCONTRACTSIZE",
-            "viewName":"allow ulimited contract size",
-            "type":"boolean"
-          },
-          {
-            "name":"KEEPALIVETIMEOUT",
-            "viewName":"keep alive timeout",
-            "type":"string"
-          },
-          {
-            "name":"TIME",
-            "viewName":"time",
-            "type":"string"
-          }]
-      },
-      {
-        "name":"stopGanacheCliExecution",
-        "viewName":"Stop Ganache-CLI execution",
-        "params":[
-          {
-            "name":"PORT",
-            "viewName":"port",
-            "type":"string"
-          }
-        ]
-      }      
-    ]
-  }
-  
+  "name": "Gahache-CLI",
+  "type": "executer",
+  "execProgram": "node",
+  "main": "app.js",
+  "version": "1.0.3",
+  "imgUrl": "logo.png",
+  "methods": [
+    {
+      "name": "executeGahacheCLI",
+      "viewName": "Execute CLI",
+      "params": [
+        {
+          "name": "ACCOUNT",
+          "viewName": "account",
+          "type": "string"
+        },
+        {
+          "name": "DEFAULTBALANCEETHER",
+          "viewName": "DefaultBalanceEther: Amount of ether to assign each test account",
+          "type": "string"
+        },
+        {
+          "name": "BLOCKTIME",
+          "viewName": "blockTime: In seconds for automatic mining",
+          "type": "string"
+        },
+        {
+          "name": "DETERMINISTIC",
+          "viewName": "Deterministic: Generate deterministic addresses based on a pre-defined mnemonic",
+          "type": "string"
+        },
+        {
+          "name": "SECURE",
+          "viewName": "Secure: Lock available accounts by default",
+          "type": "string"
+        },
+        {
+          "name": "MNEMONIC",
+          "viewName": "mnemonic: Use a bip39 mnemonic phrase for generating a PRNG seed",
+          "type": "string"
+        },
+        {
+          "name": "PORT",
+          "viewName": "port: to listen. Defualt 8545",
+          "type": "string"
+        },
+        {
+          "name": "HOST",
+          "viewName": "host: to listen. Default 127.0.0.1",
+          "type": "string"
+        },
+        {
+          "name": "SEED",
+          "viewName": "seed: Use arbitrary data to generate the HD wallet mnemonic to be used",
+          "type": "string"
+        },
+        {
+          "name": "GASPRICE",
+          "viewName": "gas price: Default 20,000,000,000 wei",
+          "type": "string"
+        },
+        {
+          "name": "GASLIMIT",
+          "viewName": "gas limit: Defaults to 0x6691b7",
+          "type": "string"
+        },
+        {
+          "name": "CALLGASLIMIT",
+          "viewName": "call Gas limit Default to 0x1fffffffffffff",
+          "type": "string"
+        },
+        {
+          "name": "HARDFORK",
+          "viewName": "hard fork",
+          "type": "string"
+        },
+        {
+          "name": "FORK",
+          "viewName": "fork",
+          "type": "string"
+        },
+        {
+          "name": "NETWORKID",
+          "viewName": "network Id",
+          "type": "string"
+        },
+        {
+          "name": "DB",
+          "viewName": "DB",
+          "type": "string"
+        },
+        {
+          "name": "DEBUG",
+          "viewName": "debug",
+          "type": "boolean"
+        },
+        {
+          "name": "MEM",
+          "viewName": "mem",
+          "type": "string"
+        },
+        {
+          "name": "QUIET",
+          "viewName": "quite",
+          "type": "boolean"
+        },
+        {
+          "name": "VERBOSE",
+          "viewName": "verbose",
+          "type": "boolean"
+        },
+        {
+          "name": "VERSION",
+          "viewName": "version",
+          "type": "string"
+        },
+        {
+          "name": "NOVMERRORSONRPCRESPONSE",
+          "viewName": "no VM Errors On RPC Response",
+          "type": "boolean"
+        },
+        {
+          "name": "ALLOWUNLIMITEDCONTRACTSIZE",
+          "viewName": "allow ulimited contract size",
+          "type": "boolean"
+        },
+        {
+          "name": "KEEPALIVETIMEOUT",
+          "viewName": "keep alive timeout",
+          "type": "string"
+        },
+        {
+          "name": "TIME",
+          "viewName": "time",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "stopGanacheCliExecution",
+      "viewName": "Stop Ganache-CLI execution",
+      "params": [
+        {
+          "name": "PORT",
+          "viewName": "port",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "category": "TESTING"
+}
